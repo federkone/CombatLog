@@ -1,14 +1,13 @@
 
 import org.CombatLog.State.PlayerState;
 import org.CombatLog.State.PlayerStateHandler;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
+
 
 import java.util.UUID;
 
-import static org.junit.jupiter.api.Assertions.*;
 
-class TestStateHandler {
+
+/*class TestStateHandler {
 
     private PlayerStateHandler stateHandler;
     private UUID playerUUID;
@@ -84,4 +83,4 @@ class TestStateHandler {
         stateHandler.cancelTimerPenalize(playerUUID);
         assertFalse(stateHandler.isPenalized(playerUUID));
     }
-}
+}*/

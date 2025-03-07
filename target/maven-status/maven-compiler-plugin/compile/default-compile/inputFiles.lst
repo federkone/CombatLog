@@ -1,8 +1,33 @@
-C:\Users\fede\Desktop\minecraft\Combat Log\CombatLog\src\main\java\MyPlugin.java
-C:\Users\fede\Desktop\minecraft\Combat Log\CombatLog\src\main\java\org\CombatLog\BukkitRunnable\Runnable.java
-C:\Users\fede\Desktop\minecraft\Combat Log\CombatLog\src\main\java\org\CombatLog\Listeners\CombatListeners.java
-C:\Users\fede\Desktop\minecraft\Combat Log\CombatLog\src\main\java\org\CombatLog\Listeners\OnPlayerJoin.java
-C:\Users\fede\Desktop\minecraft\Combat Log\CombatLog\src\main\java\org\CombatLog\Listeners\OnPlayerLeave.java
-C:\Users\fede\Desktop\minecraft\Combat Log\CombatLog\src\main\java\org\CombatLog\Scoreboards\ScoreboardCombat.java
-C:\Users\fede\Desktop\minecraft\Combat Log\CombatLog\src\main\java\org\CombatLog\State\PlayerState.java
-C:\Users\fede\Desktop\minecraft\Combat Log\CombatLog\src\main\java\org\CombatLog\State\PlayerStateHandler.java
+C:\Users\feder\IdeaProjects\CombatLog\src\main\java\CombatLog.java
+C:\Users\feder\IdeaProjects\CombatLog\src\main\java\org\CombatLog\BukkitRunnable\Runnable.java
+C:\Users\feder\IdeaProjects\CombatLog\src\main\java\org\CombatLog\BukkitRunnable\RunnableNpc.java
+C:\Users\feder\IdeaProjects\CombatLog\src\main\java\org\CombatLog\CitizensApiExpansion\NpcManager.java
+C:\Users\feder\IdeaProjects\CombatLog\src\main\java\org\CombatLog\Commands\CommandStates.java
+C:\Users\feder\IdeaProjects\CombatLog\src\main\java\org\CombatLog\Commands\ResetAllStates.java
+C:\Users\feder\IdeaProjects\CombatLog\src\main\java\org\CombatLog\Config\File.java
+C:\Users\feder\IdeaProjects\CombatLog\src\main\java\org\CombatLog\Data\PlayerDataFile.java
+C:\Users\feder\IdeaProjects\CombatLog\src\main\java\org\CombatLog\Events\onActivateCombat.java
+C:\Users\feder\IdeaProjects\CombatLog\src\main\java\org\CombatLog\Events\onActivateDisconnected.java
+C:\Users\feder\IdeaProjects\CombatLog\src\main\java\org\CombatLog\Events\onActivateIdle.java
+C:\Users\feder\IdeaProjects\CombatLog\src\main\java\org\CombatLog\Events\onActivatePenalized.java
+C:\Users\feder\IdeaProjects\CombatLog\src\main\java\org\CombatLog\Events\onChangeState.java
+C:\Users\feder\IdeaProjects\CombatLog\src\main\java\org\CombatLog\Events\onUnpenalized.java
+C:\Users\feder\IdeaProjects\CombatLog\src\main\java\org\CombatLog\Listeners\Customs\AbstractChangeStateListener.java
+C:\Users\feder\IdeaProjects\CombatLog\src\main\java\org\CombatLog\Listeners\Customs\ChangeStateListener.java
+C:\Users\feder\IdeaProjects\CombatLog\src\main\java\org\CombatLog\Listeners\Customs\ChangeStateListenerNpc.java
+C:\Users\feder\IdeaProjects\CombatLog\src\main\java\org\CombatLog\Listeners\Penalized\AllEventsCancelable.java
+C:\Users\feder\IdeaProjects\CombatLog\src\main\java\org\CombatLog\Listeners\TriggerStates\AbstractCombatListeners.java
+C:\Users\feder\IdeaProjects\CombatLog\src\main\java\org\CombatLog\Listeners\TriggerStates\CombatListeners.java
+C:\Users\feder\IdeaProjects\CombatLog\src\main\java\org\CombatLog\Listeners\TriggerStates\CombatListenersNpc.java
+C:\Users\feder\IdeaProjects\CombatLog\src\main\java\org\CombatLog\Listeners\TriggerStates\PlayerJoinListener.java
+C:\Users\feder\IdeaProjects\CombatLog\src\main\java\org\CombatLog\Listeners\TriggerStates\PlayerLeaveListener.java
+C:\Users\feder\IdeaProjects\CombatLog\src\main\java\org\CombatLog\Logs\Debug.java
+C:\Users\feder\IdeaProjects\CombatLog\src\main\java\org\CombatLog\PlaceHolderApiExpAnsion\CombatLogPlaceHolder.java
+C:\Users\feder\IdeaProjects\CombatLog\src\main\java\org\CombatLog\RegisterCommands.java
+C:\Users\feder\IdeaProjects\CombatLog\src\main\java\org\CombatLog\RegisterEvents.java
+C:\Users\feder\IdeaProjects\CombatLog\src\main\java\org\CombatLog\RegisterRunnable.java
+C:\Users\feder\IdeaProjects\CombatLog\src\main\java\org\CombatLog\Scoreboards\ScoreboardCombat.java
+C:\Users\feder\IdeaProjects\CombatLog\src\main\java\org\CombatLog\State\PlayerState.java
+C:\Users\feder\IdeaProjects\CombatLog\src\main\java\org\CombatLog\State\PlayerStateHandler.java
+C:\Users\feder\IdeaProjects\CombatLog\src\main\java\org\CombatLog\Utils\MessagesCombat.java
+C:\Users\feder\IdeaProjects\CombatLog\src\main\java\org\CombatLog\Utils\TranslateStates.java
