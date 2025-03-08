@@ -2,6 +2,7 @@ C:\Users\feder\IdeaProjects\CombatLog\src\main\java\CombatLog.java
 C:\Users\feder\IdeaProjects\CombatLog\src\main\java\org\CombatLog\BukkitRunnable\Runnable.java
 C:\Users\feder\IdeaProjects\CombatLog\src\main\java\org\CombatLog\BukkitRunnable\RunnableNpc.java
 C:\Users\feder\IdeaProjects\CombatLog\src\main\java\org\CombatLog\CitizensApiExpansion\NpcManager.java
+C:\Users\feder\IdeaProjects\CombatLog\src\main\java\org\CombatLog\Commands\CombatLogCommand.java
 C:\Users\feder\IdeaProjects\CombatLog\src\main\java\org\CombatLog\Commands\CommandStates.java
 C:\Users\feder\IdeaProjects\CombatLog\src\main\java\org\CombatLog\Commands\ResetAllStates.java
 C:\Users\feder\IdeaProjects\CombatLog\src\main\java\org\CombatLog\Config\File.java
@@ -16,11 +17,13 @@ C:\Users\feder\IdeaProjects\CombatLog\src\main\java\org\CombatLog\Listeners\Cust
 C:\Users\feder\IdeaProjects\CombatLog\src\main\java\org\CombatLog\Listeners\Customs\ChangeStateListener.java
 C:\Users\feder\IdeaProjects\CombatLog\src\main\java\org\CombatLog\Listeners\Customs\ChangeStateListenerNpc.java
 C:\Users\feder\IdeaProjects\CombatLog\src\main\java\org\CombatLog\Listeners\Penalized\AllEventsCancelable.java
-C:\Users\feder\IdeaProjects\CombatLog\src\main\java\org\CombatLog\Listeners\TriggerStates\AbstractCombatListeners.java
-C:\Users\feder\IdeaProjects\CombatLog\src\main\java\org\CombatLog\Listeners\TriggerStates\CombatListeners.java
-C:\Users\feder\IdeaProjects\CombatLog\src\main\java\org\CombatLog\Listeners\TriggerStates\CombatListenersNpc.java
-C:\Users\feder\IdeaProjects\CombatLog\src\main\java\org\CombatLog\Listeners\TriggerStates\PlayerJoinListener.java
-C:\Users\feder\IdeaProjects\CombatLog\src\main\java\org\CombatLog\Listeners\TriggerStates\PlayerLeaveListener.java
+C:\Users\feder\IdeaProjects\CombatLog\src\main\java\org\CombatLog\Listeners\TriggerStates\Combat\AbstractCombatListeners.java
+C:\Users\feder\IdeaProjects\CombatLog\src\main\java\org\CombatLog\Listeners\TriggerStates\Combat\CombatListeners.java
+C:\Users\feder\IdeaProjects\CombatLog\src\main\java\org\CombatLog\Listeners\TriggerStates\Combat\CombatListenersNpc.java
+C:\Users\feder\IdeaProjects\CombatLog\src\main\java\org\CombatLog\Listeners\TriggerStates\JoinLeave\APlayerJoinListener.java
+C:\Users\feder\IdeaProjects\CombatLog\src\main\java\org\CombatLog\Listeners\TriggerStates\JoinLeave\PlayerJoinListener.java
+C:\Users\feder\IdeaProjects\CombatLog\src\main\java\org\CombatLog\Listeners\TriggerStates\JoinLeave\PlayerJoinNpcListener.java
+C:\Users\feder\IdeaProjects\CombatLog\src\main\java\org\CombatLog\Listeners\TriggerStates\JoinLeave\PlayerLeaveListener.java
 C:\Users\feder\IdeaProjects\CombatLog\src\main\java\org\CombatLog\Logs\Debug.java
 C:\Users\feder\IdeaProjects\CombatLog\src\main\java\org\CombatLog\PlaceHolderApiExpAnsion\CombatLogPlaceHolder.java
 C:\Users\feder\IdeaProjects\CombatLog\src\main\java\org\CombatLog\RegisterCommands.java

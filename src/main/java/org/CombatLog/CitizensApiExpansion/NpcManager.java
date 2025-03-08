@@ -32,13 +32,15 @@ public class NpcManager {
             return;
         }
 
-        NPC npc = registry.createNPC(EntityType.PIGLIN, player.getName()); //tipo y nombre
+        NPC npc = registry.createNPC(EntityType.CHICKEN, player.getName()); //tipo y nombre
 
         HologramTrait hologram = npc.getOrAddTrait(HologramTrait.class);
         hologram.addLine("&cDesconectado");  //linea adicional
 
         npc.spawn(player.getLocation());
         npc.getEntity().setSilent(true); //muted
+        npc.getEntity().setGravity(false); //no gravity
+        npc.getEntity().setInvulnerable(true); //invulnerable
 
         // Opcional: Asignar la skin del jugador al NPC
         //npc.getOrAddTrait(SkinTrait.class).setSkinName(player.getName());

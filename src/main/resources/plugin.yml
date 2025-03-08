@@ -4,16 +4,10 @@ version: 1.0
 author: Nullplague
 description:  a combat log plugin for spigot servers!
 api-version: 1.15
-depend: [Citizens]
-softdepend: [PlaceholderAPI]
+softdepend: [Citizens,PlaceholderAPI]
 commands:
-  changeState:
-    description: Cambia el estado de un jugador.
-    usage: /changeState <jugador> <estado> <tiempo>
-    permission: combatlog.command.states
-    permission-message: No tienes permisos para ejecutar este comando.
   combatLog:
       description: desactiva el plugin
-      usage: /combatLog enable/disable
+      usage: /combatlog <enable|disable|changestate>
       permission: combatlog.command.states
       permission-message: No tienes permisos para ejecutar este comando.

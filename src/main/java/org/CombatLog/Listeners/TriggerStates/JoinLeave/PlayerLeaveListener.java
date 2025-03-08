@@ -1,4 +1,4 @@
-package org.CombatLog.Listeners.TriggerStates;
+package org.CombatLog.Listeners.TriggerStates.JoinLeave;
 
 import org.CombatLog.State.PlayerStateHandler;
 import org.bukkit.entity.Player;

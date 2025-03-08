@@ -1,8 +1,10 @@
-package org.CombatLog.Listeners.TriggerStates;
+package org.CombatLog.Listeners.TriggerStates.Combat;
 
 import net.citizensnpcs.api.CitizensAPI;
 import org.CombatLog.State.PlayerStateHandler;
 import org.bukkit.entity.Player;
+import org.bukkit.event.EventHandler;
+import org.bukkit.event.entity.EntityDamageByEntityEvent;
 
 public class CombatListenersNpc extends AbstractCombatListeners {
 
@@ -11,10 +13,11 @@ public class CombatListenersNpc extends AbstractCombatListeners {
     }
 
     @Override
-    protected void handleCombat(Player victim, Player attacker) {
-        if (CitizensAPI.getNPCRegistry().isNPC(victim)) {
+    @EventHandler
+    public void onPlayerCombat(EntityDamageByEntityEvent event) {
+        if (CitizensAPI.getNPCRegistry().isNPC(event.getEntity())) {
             return;
         }
-        super.activateCombat(victim, attacker);
+        super.onPlayerCombat(event);
     }
 }

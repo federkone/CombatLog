@@ -1,0 +1,12 @@
+messages:
+  outCombat: "&a✅ Ya no estás en combate!"
+  inCombat: "&c❌ Has entrado en combate! Durante 1 minuto, si te desconectas en combate y no regresas seras penalizado ❌"
+  inPenalize: "&c❌ Has sido PENALIZADO❌"
+  broadcastPenalize: "El jugador {player} ha sido &cPENALIZADO"
+  broadcastDisconnected: "&cEl jugador {player} se ha desconectado en combate, tiene 5 minutos para volver al juego o sera penalizado."
+  outPenalize: "&a✅ Ya no estás penalizado! ✅"
+  state:
+    combat: "&cEn combate"
+    idle: "&aTranquilo"
+    penalized: "&cPENALIZADO"
+    disconnected: "&cDesconectado"

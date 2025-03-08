@@ -6,12 +6,17 @@ import org.CombatLog.Config.File;
 import org.CombatLog.Config.PlayerDataFile;
 import org.CombatLog.Scoreboards.ScoreboardCombat;
 import org.CombatLog.State.PlayerStateHandler;
+import org.CombatLog.Utils.MessagesCombat;
+import org.CombatLog.Utils.TranslateStates;
 import org.bukkit.Bukkit;
+import org.bukkit.configuration.file.FileConfiguration;
+import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.event.HandlerList;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public class CombatLog extends JavaPlugin {
-    private final PlayerStateHandler stateHandler = new PlayerStateHandler();
+    private FileConfiguration messagesConfig;
+    private  PlayerStateHandler stateHandler;
     private NpcManager npcManager=null ;
     private PlayerDataFile playerDataFile;
     private ScoreboardCombat scoreboard;
@@ -21,7 +26,13 @@ public class CombatLog extends JavaPlugin {
     public void onLoad() {
         File file = new File(this);
         file.loadConfig();
+        loadMessagesConfig();
 
+        int timeCombat = getConfig().getInt("TimeCombat");
+        int timeDisconnected = getConfig().getInt("TimeDisconnected");
+        int timePenalize = getConfig().getInt("TimePenalize");
+
+        stateHandler = new PlayerStateHandler(timeCombat, timeDisconnected, timePenalize);
         playerDataFile = new PlayerDataFile(this); //data player
         playerDataFile.loadAllData(stateHandler);
 
@@ -30,6 +41,8 @@ public class CombatLog extends JavaPlugin {
 
     @Override
     public void onEnable() {
+        MessagesCombat.initialize(this);
+        TranslateStates.initialize(this);
         events = new RegisterEvents().register(this);
         RegisterCommands.register(this);
         RegisterRunnable.register(this);
@@ -76,5 +89,16 @@ public class CombatLog extends JavaPlugin {
     public void enable(){
         events = new RegisterEvents().register(this);
         RegisterRunnable.register(this);
+    }
+
+    private void loadMessagesConfig() {
+        java.io.File messagesFile = new java.io.File(getDataFolder(), "messages.yml");
+        if (!messagesFile.exists()) {
+            saveResource("messages.yml", false);
+        }
+        messagesConfig = YamlConfiguration.loadConfiguration(messagesFile);
+    }
+    public FileConfiguration getMessagesConfig() {
+        return messagesConfig;
     }
 }

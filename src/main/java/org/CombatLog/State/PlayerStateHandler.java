@@ -10,9 +10,15 @@ import java.util.concurrent.ConcurrentHashMap;
 public class PlayerStateHandler {
     private final Map<UUID, PlayerState> playerStates = new ConcurrentHashMap<>();  //esta lista se puede dejar registrada en una DB
     private final Map<UUID, Integer> timers = new ConcurrentHashMap<>();
-    private final int timeCombat = 60; // 60 segundos
-    private final int timePenalized = 500; // 500 segundos
-    private final int timeDisconnected = 300; // 300 segundos
+    private int timeCombat ; // 60 segundos
+    private int timePenalized ; // 500 segundos
+    private int timeDisconnected ; // 300 segundos
+
+    public PlayerStateHandler( int timeCombat, int timeDisconnected, int timePenalized) {
+        this.timeCombat = timeCombat;
+        this.timePenalized = timePenalized;
+        this.timeDisconnected = timeDisconnected;
+    }
 
     //todo:manejo de timers y estados global------------------------------------------------------->>
     public void updateTimers(){

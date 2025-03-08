@@ -1,4 +1,4 @@
-package org.CombatLog.Listeners.TriggerStates;
+package org.CombatLog.Listeners.TriggerStates.Combat;
 
 import org.CombatLog.State.PlayerStateHandler;
 import org.bukkit.entity.Player;
@@ -17,15 +17,9 @@ public abstract class AbstractCombatListeners implements Listener {
     @EventHandler
     public void onPlayerCombat(EntityDamageByEntityEvent event) {
         if (event.getEntity() instanceof Player victim && event.getDamager() instanceof Player attacker) {
-            handleCombat(victim, attacker);
+            stateHandler.activateCombat(victim.getUniqueId());
+            stateHandler.activateCombat(attacker.getUniqueId());
         }
-    }
-
-    protected abstract void handleCombat(Player victim, Player attacker);
-
-    protected void activateCombat(Player victim, Player attacker) {
-        stateHandler.activateCombat(victim.getUniqueId());
-        stateHandler.activateCombat(attacker.getUniqueId());
     }
 
     @EventHandler
